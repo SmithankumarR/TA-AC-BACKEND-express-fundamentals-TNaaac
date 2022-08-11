@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    color:rgb(254, 27, 27);
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.flex-30{
+    flex: 0 0 27%;
+    margin: 2rem;
+    border: 2px solid black;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
