@@ -5,6 +5,7 @@ var app = express();
 
 // middleware
 app.use(logger('dev'));
+app.use(express.urlencoded({ extended : false}));
 
 app.get('/' , (req,res) => {
     res.sendFile(__dirname + '/index.html');
@@ -15,16 +16,11 @@ app.get('/new', (req,res) => {
 })
 
 app.post('/new', (req,res) => {
-    var store
-    req.on('data',(chunk) => {
-        store += chunk;
-    })
-    req.on('end',() => {
-        res.send(store);
-    });
+    res.json(req.body)
 })
-app.get('/users/asdf' , (req,res) => {
-    res.send(req.params.asdf);
+app.get('/users/username' , (req,res) => {
+    var username = (req.params.username);
+    res.send(username)
 })
 app.listen(4000, () => {
     console.log('listening on port 4000');
