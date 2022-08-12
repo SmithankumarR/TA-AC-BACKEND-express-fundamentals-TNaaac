@@ -1,0 +1,139 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* root variables */
+:root {
+  --primary: rgb(234, 84, 52);
+  --secondary: rgb(255, 255, 255);
+  --text-light: rgb(167, 166, 166);
+  --text-dark: rgb(85, 73, 69);
+  --bg-1: rgb(254, 249, 247);
+}
+/* my styles */
+html {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  background-color: var(--primary);
+}
+/* container */
+.container {
+  max-width: 1370px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+/* flex{*/
+.flex {
+  display: flex;
+}
+.jcb{
+    justify-content: space-between;
+}
+.aic{
+    align-items: center;
+}
+/* custom */
+.heading{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+strong{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+strong:hover {
+    color: var(--primary);
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+a:hover {
+    color: var(--primary);
+}
+.flexiable-img{
+    width: 100%;
+    border-radius: 2rem;
+    margin: 2rem 0;
+}
+
+.main-heading{
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+article h3{
+    font-size: 1.5rem;
+    text-align: center;
+    color: yellow;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+article p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 2rem 0;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
