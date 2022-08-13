@@ -1,0 +1,11 @@
+
+body{
+    background-color: cornflowerblue;
+    margin: 2rem auto;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
